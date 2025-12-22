@@ -14,6 +14,7 @@ The program can not only keep track of requirements, but it can also prioritize 
 4. Run the program by pressing "run"
 5. Follow the on-screen instructions.
 
+
 #Example Output:
 What do you want to do?
 1 - Add a new task
@@ -22,6 +23,7 @@ What do you want to do?
 4 - Exit
 Enter your choice: 1
 What is the task? Year-long Project
+
 
 Which subject is this task for?
 1 - Earth Science
@@ -41,6 +43,7 @@ Enter subject number: 11
 How hard is it? (1 to 10): 8
 When is it due? (YYYY-MM-DD): 2025-04-28
 Task added!
+
 
 #Contributors
 -Student 1: Kirsten Zoe Cortez (made the idea, provided a more unique program)
