@@ -8,12 +8,8 @@ The program aims to keep track of requirements that the student fails to remembe
 The program can not only keep track of requirements, but it can also prioritize tasks based on difficulty level (1-10 scale) and due dates the closest. not only that, the program gives words of motivation after every finished trask so that the user feels motivated and proud of their progress.
 
 #How to run the program:
-1. Make sure ypu have a python compiler
-2. Download the file "ISKALAR_Sync.py"
-3. Open a terminal or command prompt
-4. Run the program by pressing "run"
-5. Follow the on-screen instructions.
-
+1. Download zip file of ISAKALARSync.
+2. Run 
 
 #Example Output:
 What do you want to do?
@@ -46,5 +42,6 @@ Task added!
 
 
 #Contributors
+
 -Student 1: Kirsten Zoe Cortez (made the idea, provided a more unique program)
 -Student 2: Evane Jessy Feliz Avestruz (added insights, and helped imrpoved the idea)
