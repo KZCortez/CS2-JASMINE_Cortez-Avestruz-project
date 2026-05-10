@@ -1,47 +1,61 @@
 # CS2-JASMINE_Cortez-Avestruz-project
 #Title: ISKALARSync
 
-#Description:
-The program aims to keep track of requirements that the student fails to remember, and this helps the student not force themselves to cram the requirements, it helps their overall academic experience.
+ISKALARSync is a command-line based task management program designed to help students organize and prioritize their academic workload. The system allows users to create tasks, assign them to specific subjects, set difficulty levels, and input due dates.
 
-#Features:
-The program can not only keep track of requirements, but it can also prioritize tasks based on difficulty level (1-10 scale) and due dates the closest. not only that, the program gives words of motivation after every finished trask so that the user feels motivated and proud of their progress.
+The program automatically prioritizes tasks based on urgency (due date) and complexity (difficulty level), helping users focus on the most important tasks first. Additionally, it tracks completed tasks and provides motivational feedback to encourage productivity.
 
-#How to run the program:
-1. Download zip file of ISAKALARSync.
-2. Run 
+Features
+- Task creation with subject, difficulty, and due date
+- Automatic task prioritization (due date and difficulty)
+- Due date tracking with overdue detection
+- Task completion and storage of finished tasks
+- Input validation and error handling
+- Motivational feedback system
 
-#Example Output:
-What do you want to do?
-1 - Add a new task
-2 - View all tasks
-3 - Mark a task as done
-4 - Exit
-Enter your choice: 1
-What is the task? Year-long Project
+System Requirements
+- Python 3.x installed on the computer
+- A terminal or command-line interface (Command Prompt, Terminal, etc.)
 
+1. Ensure that Python 3 is installed on your system.
+2. Save the program file (e.g., iskalarsync.py).
+3. Open a terminal or command prompt.
+4. Navigate to the folder where the file is located.
+5. Run the program using the command:
+   python iskalarsync.py
 
-Which subject is this task for?
-1 - Earth Science
-2 - Algebra
-3 - Geometry
-4 - Biology
-5 - VALED
-6 - PEHM
-7 - English
-8 - Filipino
-9 - ADTECH
-10 - Social Science
-11 - Computer Science
-12 - Physics
-13 - Chemistry
-Enter subject number: 11
-How hard is it? (1 to 10): 8
-When is it due? (YYYY-MM-DD): 2025-04-28
-Task added!
+How to Use:
+After running the program, the user is presented with a menu containing four options:
 
+1. Add new task
+2. View all tasks (prioritized)
+3. Mark a task done
+4. Exit
 
-#Contributors
+Adding Tasks
+- Input the task name, subject, difficulty (1–10), and due date (YYYY-MM-DD).
+- The program validates inputs and warns if the task is already overdue.
+Viewing Tasks
+- Displays all tasks sorted by earliest due date and highest difficulty.
+- Shows remaining days or marks tasks as overdue.
+Completing Tasks
+- Select a task from the list to mark it as done.
+- Completed tasks are stored and removed from the active list.
+- A random motivational message is displayed.
+Exiting
+- Users may choose to view completed tasks before exiting the program.
 
--Student 1: Kirsten Zoe Cortez (made the idea, provided a more unique program)
--Student 2: Evane Jessy Feliz Avestruz (added insights, and helped imrpoved the idea)
+Program Structure
+- Lists are used to store tasks, finished tasks, subjects, and motivational messages
+- Dictionaries store individual task details (name, subject, difficulty, due date)
+- Functions handle input validation and date checking
+- Sorting with lambda functions is used for prioritizing tasks
+- datetime module is used for handling dates
+- random module is used for generating motivational messages
+
+Limitations
+- Data is not saved permanently (all tasks reset when the program is closed)
+- Limited storage system (tasks are only stored during runtime using lists)
+- Basic prioritization (only considers due date and difficulty, not other factors like subject weight or time needed)
+- Limited input flexibility (strict date format and numeric inputs required)
+- GUI features may be basic and lack advanced interface elements (e.g., drag-and-drop, calendar integration, notifications)
